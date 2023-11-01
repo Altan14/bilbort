@@ -1,0 +1,374 @@
+<style>
+	/* 1 уровень. шапка сайта */
+	.header {
+		
+		height: 50px;
+		padding-top: 10px;
+		background: #c3c9d4;
+		
+		
+	}
+	/* 2 уровень. выравнивание шапки */
+	.header-center {
+		
+		height: 50px;
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+
+	}
+	/* 3 уровень. лого */
+	.box-logo {
+		
+		height: 50px;
+		width: 150px;
+		
+	}
+	/* 3 уровень. ссылки */
+	.box-links {
+		
+		height: 35px;
+		width: 600px;
+		
+		padding-top: 15px;
+	}
+	/* 3 уровень. кнопка подписаться */
+	.box-button {
+		
+		height: 40px;
+		width: 100px;
+		
+		padding-top: 10px;
+	}
+	/* лого картинка */
+	.logo {
+		width: 150px;
+
+	}
+	/* ссылки разноцветные */
+	/* ссылки белые */
+	.links-white {
+		font-family: Arial;
+		color: white;
+		margin-left: 40px;
+	}
+	/* 1 уровень. чат-контейнер */
+	.charts-container {
+		
+		height: 900px;
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;		
+		font-family: Arial;
+
+	}
+	/* 2 уровень. чарт-кнопки*/
+	.charts-sort {
+		
+		height: 60px;
+	}
+	/* 2 уровень. чарт-треки: new */
+	.charts{
+		background: #F9F4B8;
+		height: 120px;
+		display: flex;
+		border-radius: 5px;
+		margin-top: 10px;
+		border: 1px solid black
+	}
+	.charts-red{
+		background: red
+	}
+	.charts-green{
+		background: green
+	}
+	.charts-blue{
+		background: blue
+	}
+	/* Место в чате */
+	.charts-rank {
+		
+		height: 120px;
+		width: 90px;	
+		text-align: center;
+	}
+
+	/* информация о треке */
+	.charts-info {
+		
+		height: 120px;
+		width: 470px;
+		
+	}
+	/* купить или воспроизвести */
+	.charts-button {
+		
+		height: 120px;
+		width: 150px;
+
+		
+	}
+	/* картинка */
+	.charts-img {
+		
+		height: 120px;
+		width: 90px;
+		
+	}
+
+	/* кнопка sort оранжевая */
+	.button{
+		background: gray;
+		color: white;
+		height: 30px;
+		width: 100px;
+		border-radius: 3px;
+		border:none;
+	}
+	.button-red{
+		background: red;
+	}
+	.button-green{
+		background: green;
+	}
+	.button-black{
+		background: black
+	}
+	/* картинка трека */
+	.img-treck {
+		width: 90px;
+		margin-top: 20px;
+	}
+	.img-treck:hover{
+		margin-right: 10px;
+		width: 100px;
+		transition: 2s;
+
+	}
+	/*  */
+	.button-play {
+		background: blue;
+		color: white;
+		height: 30px;
+		width: 120px;
+		border-radius: 5px;
+		margin-top: 20px;
+		border:none;
+	}
+	.music-name{
+		
+		font-weight: bold;
+		font-size: 20px;
+		color: #12365c;
+	}
+	.artist-name{
+		font-weight: bold;
+		color: gray;
+	}
+	.text-new{
+		color:orange;
+		font-weight: bold;
+	}
+	.text-down{
+		color: red;
+		font-weight: bold;
+	}
+	.text-up{
+		color: green;
+		font-weight: bold;
+	}
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header">
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="header-center">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="box-logo">
+			<img src="logo.svg" alt="" class="logo">
+		</div>
+		<!-- ссылки -->
+		<div class="box-links">
+			<a href="" class="links-white">CHARTS</a>
+			<a href="" class="links-white">NEWS</a>
+			<a href="" class="links-white">VIDEO</a>
+			<a href="" class="links-white">PHOTOS</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div class="box-button">
+			<button class="button button-red">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts-container">
+	<!-- 2 уровень -->
+	<!-- кнопки -->
+	<div class="charts-sort">
+		<!-- кнопки -->
+		<button class="button button-red">THIS WEEK</button>
+		<button class="button button-green">LAST WEEK</button>
+		<button class="button button-green">PEAK</button>
+		<button class="button button-black">DURATION</button>
+	</div>
+	<!-- треки -->
+	<!-- трек up -->
+	<div class="charts charts-red">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>1</h1>
+			<p class="text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="music-name">Night Witches</p>
+			<p class="artist-name">Sabaton</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button button-green">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="Night-witches.jpg" alt="" class="img-treck">
+		</div>
+	</div>
+	<!-- трек new -->
+	<div class="charts charts-green">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>2</h1>
+			<p class="text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="music-name">Никто</p>
+			<p class="artist-name">Кукрыниксы</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button button-red">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="m1000x1000.jpg" alt="" class="img-treck">
+		</div>		
+	</div>
+	<!-- трек new -->
+	<div class="charts charts-blue">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>3</h1>
+			<p class="text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="music-name">Дома</p>
+			<p class="artist-name">Золото</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button button-red">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="12.jpg" alt="" class="img-treck">
+		</div>		
+	</div>
+	<!-- трек up -->
+	<div class="charts charts-green">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>4</h1>
+			<p class="text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="music-name">Джокер</p>
+			<p class="artist-name">Король и Шут</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button button-red">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="600008535211b0.webp" alt="" class="img-treck">
+		</div>		
+	</div>
+	<!-- трек down -->
+	<div class="charts charts-blue">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>5</h1>
+			<p class="text-down">Down</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="music-name">Районы-Кварталы</p>
+			<p class="artist-name">Звери</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button button-red">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="b7118f3a38bb9d1a45cbc67dd239d4f1.jpg" alt="" class="img-treck">
+		</div>		
+	</div>
+	<!-- трек new -->
+	<div class="charts charts-red">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>6</h1>
+			<p class="text-new">New</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="music-name">Cмерть луны</p>
+			<p class="artist-name">Asper X</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button button-green">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="26.jpg" alt="" class="img-treck">
+		</div>		
+	</div>
+	
+	
+	<!-- трек new -->
+	<div class="charts charts-red">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="charts-rank">
+			<h1>7</h1>
+			<p class="text-up">Up</p>
+		</div>
+		<!-- информация о треке -->
+		<div class="charts-info">
+			<p class="music-name">Фейерверк</p>
+			<p class="artist-name">Электрофорез</p>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="charts-button">
+			<button class="button button-green">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="charts-img">
+			<img src="213.jpg" alt="" class="img-treck">
+		</div>		
+	</div>
+</div>
+<!--  -->
